@@ -5,18 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L10 Meeting Management</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>L10 Meeting Management</h1>
         <div class="button-container">
-            <button onclick="location.href='#'">How to</button>
+            <button onclick="openModal('howToModal')">How to</button>
             <button onclick="location.href='#'">Scorecard</button>
             <button onclick="location.href='#'">Headlines</button>
             <button onclick="location.href='#'">To do's</button>
             <button onclick="location.href='#'">Short term issues</button>
             <button onclick="location.href='#'">Long term issues</button>
             <button onclick="location.href='#'">Conclusion</button>
+        </div>
+    </div>
+
+    <div id="howToModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('howToModal')">&times;</span>
+            <h2>How to Conduct an L10 Meeting</h2>
+            <p><strong>1. Segue (5 minutes):</strong></p>
+            <p>Purpose: Set a positive and focused tone for the meeting.</p>
+            <p>Activities: Quick team introductions (optional, especially for larger teams). Good News Sharing: Each member shares a personal or professional win to build rapport and positivity.</p>
+
+            <p><strong>2. Scorecard Review (5 minutes):</strong></p>
+            <p>Purpose: Quickly assess the overall health of the company based on key metrics.</p>
+            <p>Activities: Review 3-5 pre-defined key metrics from your company scorecard. Briefly compare actual performance against targets. Identify any significant deviations and note areas requiring deeper discussion later.</p>
+
+            <p><strong>3. Rocks Review (5 minutes):</strong></p>
+            <p>Purpose: Evaluate progress on the team's top priorities, also known as "Rocks."</p>
+            <p>Activities: Briefly review each Rock (typically 3-7 quarterly priorities). Clearly state whether each Rock is "on track" or "off track." For off-track Rocks, discuss roadblocks and potential solutions.</p>
+
+            <p><strong>4. Core Values (5 minutes):</strong></p>
+            <p>Purpose: Recognize and celebrate instances where team members embodied the company's core values.</p>
+            <p>Activities: Share specific examples of how core values were upheld in recent situations. Discuss the positive impact of these actions. Recognize and appreciate team members involved in upholding the company's values.</p>
+
+            <p><strong>5. To-Do List (10 minutes):</strong></p>
+            <p>Purpose: Clearly define next steps and ensure accountability.</p>
+            <p>Activities: Review all action items identified during the IDS discussion. Assign ownership for each action item to a specific team member. Clearly define deadlines for each action item.</p>
+
+            <p><strong>6. IDS (Identify, Discuss, Solve) (60 minutes):</strong></p>
+            <p>Purpose: This is the heart of the L10 meeting, dedicated to tackling the most pressing issues.</p>
+            <p>Activities: Identify Issues: Brainstorm and discuss current challenges or obstacles facing the company. Discuss Issues: Analyze each issue from different angles to understand its root cause. Solve Issues: Collaboratively develop solutions and action plans to address the problems. Prioritization: Rank issues based on their potential impact and urgency.</p>
+
+            <p><strong>7. Conclusion (5 minutes):</strong></p>
+            <p>Purpose: Summarize key takeaways and next steps.</p>
+            <p>Activities: Briefly recap the main decisions and action items from the meeting. Assign someone to take minutes and distribute them to the team. Optional: Collectively rate the meeting on a scale (e.g., 1-10) to identify areas for improvement.</p>
         </div>
     </div>
 </body>
